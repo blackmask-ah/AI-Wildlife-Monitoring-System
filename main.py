@@ -112,7 +112,7 @@ if st.session_state.show_result:
     with col1:
         st.subheader("🌦️ Weather & Air Quality")
         try:
-            API_KEY = "e55da8c22dace325ae8a93ef70acfc75"
+            API_KEY = "Give It Your APi"
             weather_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}&units=metric"
             air_url = f"http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API_KEY}"
             weather_data = requests.get(weather_url).json()
